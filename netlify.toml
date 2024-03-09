@@ -1,5 +1,5 @@
 [build]
 base = "/"
-command = "cd client && npm install && npm run build && cd ../server && go build -o ../functions/server"
+command = "cd client && npm install && npm run build && cd server && go build -o ../functions/server"
 publish = "client/build"
 functions = "functions"
