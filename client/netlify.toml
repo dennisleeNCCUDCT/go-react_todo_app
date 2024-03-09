@@ -1,0 +1,12 @@
+[build]
+command = "cd server && go build -o ../functions/server && cd ../client && npm install && npm run build"
+publish = "client/build"
+functions = "functions"
+
+[build.environment]
+GO_VERSION = "1.18"
+
+[build]
+command = "cd client && npm install && npm run build"
+publish = "client/build"
+
