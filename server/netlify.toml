@@ -5,3 +5,8 @@ functions = "functions"
 
 [build.environment]
 GO_VERSION = "1.18"
+
+[build]
+command = "cd client && npm install && npm run build"
+publish = "client/build"
+
